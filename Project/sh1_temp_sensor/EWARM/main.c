@@ -24,7 +24,7 @@
 #define SHT11_LONG_TIMEOUT             ((uint32_t)(10 * SHT11_FLAG_TIMEOUT))  
 
 #define SHT11_ADDR                    0
-#define SHT11_MEASURE_CMD             ( ((uint8_t)(SHT11_ADDR << 4)) | 0x03)
+#define SHT11_MEASURE_CMD             0x03
 
 
 __IO uint32_t  time_delay = 0;
@@ -49,17 +49,20 @@ uint8_t I2C_read_nack(I2C_TypeDef*);
 void I2C_stop(I2C_TypeDef*);
 void init_I2C(void);
 
+
+volatile uint32_t cycle = 0;
 int main()
 {
-   
-    CoreDebug->DEMCR |= CoreDebug_DEMCR_TRACENA_Msk;
-    DWT-CYCCNT = 0;
-    DWT->CTRL |= DWT_CRTRL_CYCCNTENA_Msk;
+    //Enable cycle counter
+    CoreDebug->DEMCR |= CoreDebug_DEMCR_TRCENA_Msk;
+    DWT->CYCCNT = 0;
+    DWT->CTRL |= DWT_CTRL_CYCCNTENA_Msk;
    //SysTick_Config(SystemCoreClock / 168);
    init_I2C();
    
-   //Enable cycle counter
+
    while(1){
+     cycle = DWT->CYCCNT;
      I2C_start(SHT11_I2C, SHT11_ADDR << 1, I2C_Direction_Transmitter);
      I2C_write(SHT11_I2C, SHT11_MEASURE_CMD);
      I2C_stop(SHT11_I2C);
@@ -88,13 +91,6 @@ void init_I2C(void){
   // enable clock for SCL and SDA pins
   RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB, ENABLE);
   
-  
-  /* setup SCL and SDA pins
-   * You can connect I2C1 to two different
-   * pairs of pins:
-   * 1. SCL on PB6 and SDA on PB7 
-   * 2. SCL on PB8 and SDA on PB9
-   */
   GPIO_InitStruct.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9; // we are going to use PB6 and PB7
   GPIO_InitStruct.GPIO_Mode = GPIO_Mode_AF;     // set pins to alternate function
   GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;    // set GPIO speed
@@ -110,7 +106,7 @@ void init_I2C(void){
   I2C_InitStruct.I2C_ClockSpeed = 100000;     // 100kHz
   I2C_InitStruct.I2C_Mode = I2C_Mode_I2C;     // I2C mode
   I2C_InitStruct.I2C_DutyCycle = I2C_DutyCycle_2; // 50% duty cycle --> standard
-  I2C_InitStruct.I2C_OwnAddress1 = 0x00;      // own address, not relevant in master mode
+  I2C_InitStruct.I2C_OwnAddress1 = 0x10;      // own address, not relevant in master mode
   I2C_InitStruct.I2C_Ack = I2C_Ack_Disable;   // disable acknowledge when reading (can be changed later on)
   I2C_InitStruct.I2C_AcknowledgedAddress = I2C_AcknowledgedAddress_7bit; // set address length to 7 bit addresses
   I2C_Init(I2C1, &I2C_InitStruct);        // init I2C1

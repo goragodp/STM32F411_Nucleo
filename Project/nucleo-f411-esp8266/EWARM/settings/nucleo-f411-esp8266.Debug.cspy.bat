@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "L:\STM32\F4\nucleo-f411-esp8266\Project\nucleo-f411-esp8266\EWARM\settings\nucleo-f411-esp8266.Debug.general.xcl" --backend -f "L:\STM32\F4\nucleo-f411-esp8266\Project\nucleo-f411-esp8266\EWARM\settings\nucleo-f411-esp8266.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\Users\Goragod\Desktop\STM32F411_Nucleo\Project\nucleo-f411-esp8266\EWARM\settings\nucleo-f411-esp8266.Debug.general.xcl" --backend -f "C:\Users\Goragod\Desktop\STM32F411_Nucleo\Project\nucleo-f411-esp8266\EWARM\settings\nucleo-f411-esp8266.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.4\common\bin\cspybat" -f "L:\STM32\F4\nucleo-f411-esp8266\Project\nucleo-f411-esp8266\EWARM\settings\nucleo-f411-esp8266.Debug.general.xcl" "--debug_file=%~1" --backend -f "L:\STM32\F4\nucleo-f411-esp8266\Project\nucleo-f411-esp8266\EWARM\settings\nucleo-f411-esp8266.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "C:\Users\Goragod\Desktop\STM32F411_Nucleo\Project\nucleo-f411-esp8266\EWARM\settings\nucleo-f411-esp8266.Debug.general.xcl" "--debug_file=%~1" --backend -f "C:\Users\Goragod\Desktop\STM32F411_Nucleo\Project\nucleo-f411-esp8266\EWARM\settings\nucleo-f411-esp8266.Debug.driver.xcl" 
 
 @echo off 
 :end

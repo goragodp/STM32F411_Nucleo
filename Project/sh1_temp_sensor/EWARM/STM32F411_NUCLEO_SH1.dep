@@ -110,6 +110,10 @@
           <file> 0</file>
         </tool>
         <tool>
+          <name>ICCARM</name>
+          <file> 2</file>
+        </tool>
+        <tool>
           <name>__cstat</name>
           <file> 78</file>
         </tool>
@@ -117,7 +121,7 @@
       <inputs>
         <tool>
           <name>BICOMP</name>
-          <file> 49 25 42 62 26 41 47 24 58 59 27 14 79 57 60 61 28 53 22 54 55 7 51 52 30 29 63 64 65 23 66 13 67 16 68 8 69</file>
+          <file> 49 25 42 62 26 41 47 24 59 27 14 79 51 60 61 28 53 22 54 55 7 57 58 52 30 29 63 64 65 23 66 13 67 16 68 8 69</file>
         </tool>
         <tool>
           <name>ICCARM</name>

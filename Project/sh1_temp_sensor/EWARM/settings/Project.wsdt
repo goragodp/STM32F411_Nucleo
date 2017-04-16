@@ -46,7 +46,7 @@
             <Session/>
           </Tab>
         </Tabs>
-        <SelectedTab>1</SelectedTab>
+        <SelectedTab>0</SelectedTab>
       </Wnd2>
       <Wnd3>
         <Tabs>
@@ -79,9 +79,9 @@
           <SelStart>0</SelStart>
           <SelEnd>0</SelEnd>
           <XPos2>0</XPos2>
-          <YPos2>0</YPos2>
-          <SelStart2>45</SelStart2>
-          <SelEnd2>45</SelEnd2>
+          <YPos2>69</YPos2>
+          <SelStart2>5401</SelStart2>
+          <SelEnd2>5401</SelEnd2>
         </Tab>
         <ActiveTab>0</ActiveTab>
         <Tab>
@@ -92,9 +92,9 @@
           <SelStart>0</SelStart>
           <SelEnd>0</SelEnd>
           <XPos2>0</XPos2>
-          <YPos2>1856</YPos2>
-          <SelStart2>143458</SelStart2>
-          <SelEnd2>143473</SelEnd2>
+          <YPos2>1436</YPos2>
+          <SelStart2>110157</SelStart2>
+          <SelEnd2>110157</SelEnd2>
         </Tab>
         <Tab>
           <Factory>TextEditor</Factory>
@@ -104,9 +104,9 @@
           <SelStart>0</SelStart>
           <SelEnd>0</SelEnd>
           <XPos2>0</XPos2>
-          <YPos2>259</YPos2>
-          <SelStart2>12290</SelStart2>
-          <SelEnd2>12302</SelEnd2>
+          <YPos2>0</YPos2>
+          <SelStart2>414</SelStart2>
+          <SelEnd2>414</SelEnd2>
         </Tab>
         <Tab>
           <Factory>TextEditor</Factory>
@@ -116,9 +116,9 @@
           <SelStart>0</SelStart>
           <SelEnd>0</SelEnd>
           <XPos2>0</XPos2>
-          <YPos2>1147</YPos2>
-          <SelStart2>43162</SelStart2>
-          <SelEnd2>43162</SelEnd2>
+          <YPos2>1126</YPos2>
+          <SelStart2>43131</SelStart2>
+          <SelEnd2>43131</SelEnd2>
         </Tab>
         <Tab>
           <Factory>TextEditor</Factory>
@@ -140,9 +140,21 @@
           <SelStart>0</SelStart>
           <SelEnd>0</SelEnd>
           <XPos2>0</XPos2>
-          <YPos2>790</YPos2>
-          <SelStart2>50123</SelStart2>
-          <SelEnd2>50131</SelEnd2>
+          <YPos2>789</YPos2>
+          <SelStart2>47897</SelStart2>
+          <SelEnd2>47903</SelEnd2>
+        </Tab>
+        <Tab>
+          <Factory>TextEditor</Factory>
+          <Filename>$WS_DIR$\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc\stm32f4xx_i2c.h</Filename>
+          <XPos>0</XPos>
+          <YPos>0</YPos>
+          <SelStart>0</SelStart>
+          <SelEnd>0</SelEnd>
+          <XPos2>0</XPos2>
+          <YPos2>338</YPos2>
+          <SelStart2>14199</SelStart2>
+          <SelEnd2>14209</SelEnd2>
         </Tab>
       </Pane>
       <ActivePane>0</ActivePane>
@@ -174,16 +186,16 @@
               <Rect>
                 <Top>-2</Top>
                 <Left>-2</Left>
-                <Bottom>739</Bottom>
+                <Bottom>755</Bottom>
                 <Right>291</Right>
                 <x>-2</x>
                 <y>-2</y>
                 <xscreen>200</xscreen>
                 <yscreen>200</yscreen>
-                <sizeHorzCX>211864</sizeHorzCX>
-                <sizeHorzCY>203666</sizeHorzCY>
-                <sizeVertCX>310381</sizeVertCX>
-                <sizeVertCY>754582</sizeVertCY>
+                <sizeHorzCX>104167</sizeHorzCX>
+                <sizeHorzCY>200401</sizeHorzCY>
+                <sizeVertCX>152604</sizeVertCX>
+                <sizeVertCY>758517</sizeVertCY>
               </Rect>
             </Wnd3>
           </Sizes>
@@ -202,15 +214,15 @@
                 <Top>-2</Top>
                 <Left>-2</Left>
                 <Bottom>198</Bottom>
-                <Right>946</Right>
+                <Right>1922</Right>
                 <x>-2</x>
                 <y>-2</y>
-                <xscreen>948</xscreen>
+                <xscreen>1924</xscreen>
                 <yscreen>200</yscreen>
-                <sizeHorzCX>1004237</sizeHorzCX>
-                <sizeHorzCY>203666</sizeHorzCY>
-                <sizeVertCX>211864</sizeVertCX>
-                <sizeVertCY>203666</sizeVertCY>
+                <sizeHorzCX>1002083</sizeHorzCX>
+                <sizeHorzCY>200401</sizeHorzCY>
+                <sizeVertCX>104167</sizeVertCX>
+                <sizeVertCY>200401</sizeVertCY>
               </Rect>
             </Wnd2>
           </Sizes>
